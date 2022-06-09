@@ -1,0 +1,18 @@
+.backGroundContainer {
+  background-image: linear-gradient(
+    to bottom right,
+    #9796f0 0.5%,
+    #fbc7d4 150%
+  );
+  height: 100vh;
+}
+
+.emojis-list-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding: 0px;
+  max-width: 1000px;
+}

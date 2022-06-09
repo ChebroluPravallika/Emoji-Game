@@ -1,0 +1,35 @@
+/* Write your code here. */
+.EmojiCard {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: '#ffffff33';
+}
+
+.EmojiImage {
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  .EmojiCard {
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: '#ffffff33';
+  }
+  .EmojiImage {
+    height: 30px;
+  }
+}
+
+@media (min-width: 500px) and(max-width: 900px) {
+  .EmojiCard {
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: '#ffffff33';
+  }
+  .EmojiImage {
+    height: 70px;
+  }
+}

@@ -1,0 +1,30 @@
+.score {
+  padding-right: 20px;
+}
+
+.navHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .navHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .score {
+    padding-right: 0px;
+  }
+}
