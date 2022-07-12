@@ -59,6 +59,10 @@ class EmojiGame extends Component {
     emojisList.sort(() => Math.random() - 0.5)
     const TopScore = Math.max(...scoresList)
     console.log(scoresList)
+    if (isCorrect === true && score === 12) {
+      this.setState({isCorrect: false})
+      scoresList = [...scoresList, score]
+    }
     return (
       <div className="backGroundContainer">
         <div>
@@ -78,7 +82,14 @@ class EmojiGame extends Component {
         )}
 
         {!isCorrect && (
-          <ul>
+          <ul
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <WinOrLoseCard score={score} playAgain={this.playAgain} key={0} />
           </ul>
         )}
